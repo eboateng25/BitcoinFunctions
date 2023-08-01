@@ -28,22 +28,8 @@ Please note that this project has not been updated since 2020. Future work may b
 - Bitcoin Core version 0.19.1 (This was the version used for production at the time. You will need a fully synced Bitcoin core which can take days or maybe weeks to complete. Newer versions have not been yet tested so I am unable to confirm compatibility with other versions)
   https://bitcoincore.org/bin/bitcoin-core-0.19.1/
   
-
-Please note that the program mentioned is running Java 11.0. All systems that wish to run the program must have an adequate Java SDK & JDK installed to ensure the program runs smoothly. The system requirements above are used as minimum requirements to start the program. Depending on the input size of the simulation, the program may not run properly as resources will be consumed.
-
-# Dowload link and installation instrctions for Linux, Windows and MAC OS can be found here
-https://www.oracle.com/java/technologies/downloads/#jdk18-windows
-
-# Application and user manual can be downloaded here
-https://www.dropbox.com/sh/7u73pisdtyepz0m/AACEz999iXEE33gvb4F-A6hWa?dl=0
+## Building
+Applications are built as any other Java application is built.
 
 
- 
- 
-Creditation for development of the application lies soley with the following
-
-- Antonis Theodorou / mrforum16
-- Charles Reilly    / charlesreillyUOL
-- Emmanuel Boateng  / eboateng25
-- Milly Edwards     / milly98367
-- Viraj Patel       / viraj207
+Emmanuel Boateng  / eboateng25
