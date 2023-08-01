@@ -19,7 +19,7 @@ To gain a better understanding of these applications, you would probably benefit
 </p>
 
  
-# Building & Usage
+## Building & Usage
 
 Please note that this project has not been updated since 2020. Future work may be done in the future to make sure these functions are more stable.
 
@@ -28,8 +28,34 @@ Please note that this project has not been updated since 2020. Future work may b
 - Bitcoin Core version 0.19.1 (This was the version used for production at the time. You will need a fully synced Bitcoin core which can take days or maybe weeks to complete. Newer versions have not been yet tested so I am unable to confirm compatibility with other versions)
   https://bitcoincore.org/bin/bitcoin-core-0.19.1/
   
-## Building
-Applications are built as any other Java application is built.
+## Running
+Applications are built in the same way any other Java application is built, or you may choose to the prebuilt jar files. Note that the source code has been produced using a decompiler due to lost source code so the project may lack comments.
+
+### GetRecievedByAddress
+java -jar GetRecievedByAddress [address] [minconf]
+
+<b>Argument #1 - address - Type: string, required - The Bitcoin address for transactions.</b>
+
+<b>Argument #2 - minconf - Type: numeric, required - Transactions confirmed at least this many times.</b>
+
+This function was used to update the status of each transaction in BITM. The server would run this function for all open transactions every 30s (inexpensive operation) and update the transaction status from either 'waiting for payment', 'waiting for confirmations (Seller had a choice to wait for 1,3,6 confirmations for the transaction)' or 'paid'. 
+
+The total amount in BTC received at this address is returned. It is important on the server application to check that this result is >= to the amount that is needed to be paid to ensure that users will be allowed to pay with separate payments. This value would be subtracted from the amount to pay to update users of the new amount each time.
+
+Example:
+
+`java -jar GetRecievedByAddress 1JUfbTeXxengDPqWSqmHHSVGRSBFPm 3`
+
+### BitcoinAddressValidator
+java -jar BitcoinAddressValidator [address]
+
+<b>Argument #1 - address - Type: string, required - The Bitcoin address for validation.</b>
+
+This function was used to verify whether the P2PKH Bitcoin address provided by the seller was a valid address. As of writing this, I am aware that P2PKH legacy addresses are not as commonly used making this function outdated. Plans to update this function to check for P2SH or Compatibility Address Format and Bech32 or Segwit Address Format will be in works for the future.
+
+Example:
+
+`java -jar GetRecievedByAddress 1JUfbTeXxengDPqWSqmHHSVGRSBFPm 3`
 
 
 Emmanuel Boateng  / eboateng25
