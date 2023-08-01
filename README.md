@@ -1,4 +1,4 @@
-# Bitcoin Functions
+# Bitcoin Functions (2020)
 <b>These applications were developed to work on the server side of BitInTheMiddle.co (inactive). These application use and require Bitcoin Core to send and confirm bitcoin transactions.</b>
 
 <i>Please note that this application was designed and developed in April of 2020 and has not been updated since.</i>
