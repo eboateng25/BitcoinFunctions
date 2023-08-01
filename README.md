@@ -1,5 +1,5 @@
 # Bitcoin Functions
-These applications were developed to work on the server side of BitInTheMiddle.co (inactive). These application use and require Bitcoin Core to send and confirm bitcoin transactions. 
+<b>These applications were developed to work on the server side of BitInTheMiddle.co (inactive). These application use and require Bitcoin Core to send and confirm bitcoin transactions.</b>
 
 <i>Please note that this application was designed and developed in April of 2020 and has not been updated since.</i>
  
@@ -19,13 +19,15 @@ To gain a better understanding of these applications, you would probably benefit
 </p>
 
  
-# Prior to installation ensure your system meets the following requirements
-- OS: Windows 10, Mac OS, Linux. <br/>
-- Processor: 2.3 GHz Intel Core 2 Duo or better.<br/>
-- Memory: 512 MB RAM.<br/>
-- Graphics: DirectX 9 compatible video card with at least 512MB of VRAM.<br/>
-- DirectX: Version 9.0.<br/>
-- Storage: 5 GB available space.<br/>
+# Building & Usage
+
+Please note that this project has not been updated since 2020. Future work may be done in the future to make sure these functions are more stable.
+
+## Prerequisites
+- Java 1.8 + (JDK if building | JRE should be good enough to run the .jar binaries)
+- Bitcoin Core version 0.19.1 (This was the version used for production at the time. You will need a fully synced Bitcoin core which can take days or maybe weeks to complete. Newer versions have not been yet tested so I am unable to confirm compatibility with other versions)
+  https://bitcoincore.org/bin/bitcoin-core-0.19.1/
+  
 
 Please note that the program mentioned is running Java 11.0. All systems that wish to run the program must have an adequate Java SDK & JDK installed to ensure the program runs smoothly. The system requirements above are used as minimum requirements to start the program. Depending on the input size of the simulation, the program may not run properly as resources will be consumed.
 
