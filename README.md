@@ -27,7 +27,7 @@ Please note that this project has not been updated since 2020. Future work may b
 - Java 1.8 + (JDK if building | JRE should be good enough to run the .jar binaries)
 - Bitcoin Core version 0.19.1 (This was the version used for production at the time. You will need a fully synced Bitcoin core which can take days or maybe weeks to complete. Newer versions have not been yet tested so I am unable to confirm compatibility with other versions)
   https://bitcoincore.org/bin/bitcoin-core-0.19.1/
-- You will need to be somewhat familiar with how Bitcoin wallets and addresses work. (This article should give you a good enough understanding of how they work https://bitpay.com/blog/crypto-wallet-addresses/#what-is-a-crypto-wallet-address-how-do-they-work)
+- You will need to be somewhat familiar with how Bitcoin wallets and addresses work. (This article should give you a good enough understanding of how they work: https://bitpay.com/blog/crypto-wallet-addresses/#what-is-a-crypto-wallet-address-how-do-they-work)
   
 ## Running
 Applications are built in the same way any other Java application is built, or you may choose to the prebuilt jar files however note that variables such as the path of your 'bitcoin-cli.exe; will need to be the same (You may choose to make a shortcut to point to your bitcoin-cli). Note that the source code has been produced using a decompiler due to lost source code so the project may lack comments.
@@ -105,6 +105,10 @@ Example:
 `java -jar ReleaseTransaction 1JUfbTeXxengDPqWSqmHHSVGRSBFPm 0.485 2NALknEp4xhc1rFkpNoJNKjwkuQeCYp6NDY`
 
 
-Functions return false if something goes wrong to prevent any sensitive data from being leaked. A full stack of went wrong is provided in the LOG_FILE.
+<b>Functions will return false if something goes wrong to prevent any sensitive data from being leaked. A full stack of went wrong is provided in the LOG_FILE.
+</b>
+
+## Future plans
+Coming soon...
 
 Emmanuel Boateng  / eboateng25
