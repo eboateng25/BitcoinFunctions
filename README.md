@@ -105,4 +105,6 @@ Example:
 `java -jar ReleaseTransaction 1JUfbTeXxengDPqWSqmHHSVGRSBFPm 0.485 2NALknEp4xhc1rFkpNoJNKjwkuQeCYp6NDY`
 
 
+Functions return false if something goes wrong to prevent any sensitive data from being leaked. A full stack of went wrong is provided in the LOG_FILE.
+
 Emmanuel Boateng  / eboateng25
