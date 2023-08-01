@@ -1,9 +1,11 @@
 # Bitcoin Functions
-These applications were developed to work server-side of BitInTheMiddle.co (inactive). These application use and require Bitcoin Core to send and confirm bitcoin transactions.
+These applications were developed to work server-side of BitInTheMiddle.co (inactive). These application use and require Bitcoin Core to send and confirm bitcoin transactions. Please note that this application was developed in April 2020 and has not been updated since.
  
  Applications include:
  
- - <b>GetRecievedByAddress</b> - 
+ - <b>GetRecievedByAddress</b> - Returns the total amount received by the given address in transactions with at least minconf confirmations.
+ - <b>BitcoinAddressValidator</b> - Verifies whether the P2PKH bitcoin address provided is valid.
+ - 
 
  
 # Prior to installation ensure your system meets the following requirements
