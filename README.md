@@ -1,9 +1,16 @@
 # Bitcoin Functions
-These applications were developed to work server-side of BitInTheMiddle.co (inactive). These application use and require Bitcoin Core to send and confirm bitcoin transactions. Please note that this application was developed in April 2020 and has not been updated since.
+These applications were developed to work on the server side of BitInTheMiddle.co (inactive). These application use and require Bitcoin Core to send and confirm bitcoin transactions. 
+
+<i>Please note that this application was designed and developed in April of 2020 and has not been updated since.</i>
  
- - <b>GetRecievedByAddress</b> - Returns the total amount received by the given address in transactions with at least minconf confirmations.
+ - <b>GetRecievedByAddress</b> - Returns the total amount of bitcoin received by the given address in transactions with at least <i>minconf</i> confirmations.
  - <b>BitcoinAddressValidator</b> - Verifies whether the P2PKH bitcoin address provided is valid.
- - 
+ - <b>GetNewAddress</b> - Returns a new Bitcoin address for receiving payments.
+ - <b>ReleaseTransaction</b> - Creates and sends Bitcoins to another address/s.
+
+# BitInTheMiddle?
+To gain a better understanding of these applications, you would probably benefit from a better understanding of what the BitInTheMiddle (BITM) project was. BITM was a website launched in August of 2020 that acted as a Bitcoin escrow. The website would involve two parties, one of which was selling a service or good that would be exchanged for Bitcoin. Both parties would agree to use BITM as their escrow and would require the party selling their service or goods to create a transaction on the BITM network. Once the transaction was created, the other party would send the Bitcoin to BITM and would prompt the seller to send their part of the transaction. Once both parties were happy, the buyer would 'Release the bitcoin', automatically sending the Bitcoin to the seller with a small fee sent to BITM as a cost for using the service. If one of the parties was not happy with the transaction, the dispute button could be used to hold the Bitcoin with BITM allowing for a member of the BITM staff to intervene if necessary.
+
 
  
 # Prior to installation ensure your system meets the following requirements
