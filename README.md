@@ -29,7 +29,7 @@ Please note that this project has not been updated since 2020. Future work may b
   https://bitcoincore.org/bin/bitcoin-core-0.19.1/
   
 ## Running
-Applications are built in the same way any other Java application is built, or you may choose to the prebuilt jar files. Note that the source code has been produced using a decompiler due to lost source code so the project may lack comments.
+Applications are built in the same way any other Java application is built, or you may choose to the prebuilt jar files however note that variables such as the path of your 'bitcoin-cli.exe; will need to be the same (You may choose to make a shortcut to point to your bitcoin-cli). Note that the source code has been produced using a decompiler due to lost source code so the project may lack comments.
 
 ### GetRecievedByAddress
 java -jar GetRecievedByAddress [address] [minconf]
@@ -51,11 +51,39 @@ java -jar BitcoinAddressValidator [address]
 
 <b>Argument #1 - address - Type: string, required - The Bitcoin address for validation.</b>
 
-This function was used to verify whether the P2PKH Bitcoin address provided by the seller was a valid address. As of writing this, I am aware that P2PKH legacy addresses are not as commonly used making this function outdated. Plans to update this function to check for P2SH or Compatibility Address Format and Bech32 or Segwit Address Format will be in works for the future.
+This function was used to verify whether the P2PKH Bitcoin address provided by the seller was a valid address. As of writing this, I am aware that P2PKH legacy addresses are not as commonly used making this function outdated. Plans to update this function to check for P2SH or Compatibility Address Format and Bech32 or Segwit Address Format will be in the works for the future.
+
+The function simply returns true if the address is valid or false if the address is invalid.
 
 Example:
 
-`java -jar GetRecievedByAddress 1JUfbTeXxengDPqWSqmHHSVGRSBFPm 3`
+`java -jar BitcoinAddressValidator 1JUfbTeXxengDPqWSqmHHSVGRSBFPm`
+
+### GetNewAddress
+java -jar GetNewAddress [label]
+
+<b>Argument #1 - address - Type: string, required - The label name for the address to be linked to. This was usually set to the transaction id</b>
+
+This function was used to create the address that would be used to deposit the Bitcoin for each transaction. The BITM transaction id generated was used to link each Bitcoin address.
+
+The function simply returns the Bitcoin address generated.
+
+Example:
+
+`java -jar GetNewAddress BITM1786237870669756`
+
+### ReleaseTransaction
+java -jar BitcoinAddressValidator [toAddress] [amount] [fromAddress]
+
+<b>Argument #1 - address - Type: string, required - The label name for the address to be linked to. This was usually set to the transaction id</b>
+
+This function was used to create the address that would be used to deposit the Bitcoin for each transaction. The BITM transaction id generated was used to link each Bitcoin address.
+
+The function simply returns the Bitcoin address generated.
+
+Example:
+
+`java -jar GetNewAddress BITM1786237870669756`
 
 
 Emmanuel Boateng  / eboateng25
